@@ -1,0 +1,97 @@
+/* --- CSS STYLES --- */
+:root {
+    --bg-color: #0d1117;       /* GitHub Dark Background */
+    --text-color: #c9d1d9;     /* Soft White */
+    --primary: #58a6ff;        /* Blue */
+    --secondary: #7ee787;      /* Green */
+    --accent: #d2a8ff;         /* Purple */
+    --warning: #f2cc60;        /* Yellow */
+    --error: #ff7b72;          /* Red */
+    --prompt-user: #7ee787;    /* Green for user */
+    --prompt-symbol: #d2a8ff;  /* Purple for symbol */
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.terminal-window {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    position: relative;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: var(--bg-color);
+}
+::-webkit-scrollbar-thumb {
+    background: #30363d;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #484f58;
+}
+
+/* Content Styling */
+a {
+    color: var(--primary);
+    text-decoration: none;
+    border-bottom: 1px dashed var(--primary);
+}
+a:hover {
+    color: var(--secondary);
+    border-color: var(--secondary);
+}
+
+.output-line {
+    margin-bottom: 10px;
+    line-height: 1.5;
+    white-space: pre-wrap;
+}
+
+.command-history {
+    color: #8b949e;
+    margin-bottom: 4px;
+}
+
+/* Input Area */
+.input-line {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.prompt {
+    white-space: nowrap;
+    margin-right: 8px;
+}
+
+.prompt-user { color: var(--prompt-user); font-weight: bold; }
+.prompt-symbol { color: var(--prompt-symbol); }
+
+input {
+    background: transparent;
+    border: none;
+    color: var(--text-color);
+    font-family: inherit;
+    font-size: inherit;
+    flex-grow: 1;
+    outline: none;
+    caret-color: var(--secondary);
+}
