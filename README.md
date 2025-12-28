@@ -1,1 +1,0 @@
-# halilkirazkaya.github.io
