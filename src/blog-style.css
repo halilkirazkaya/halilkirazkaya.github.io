@@ -1,0 +1,36 @@
+/* Blog Post Styles */
+body {
+    overflow-y: auto;
+    display: block;
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    color: var(--secondary);
+    border-bottom: 1px solid var(--primary);
+    padding-bottom: 0.5rem;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 2rem;
+    color: var(--accent);
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: square;
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}

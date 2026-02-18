@@ -18,6 +18,7 @@ ${yellow("Available Commands:")}
   ${green("whoami")}    - Professional summary, skills & certs
   ${green("projects")}  - Open source tools & contributions
   ${green("contact")}   - Social links & email
+  ${green("blog")}      - Read my blog posts
   ${green("clear")}     - Clear the terminal screen
 `,
 
@@ -57,7 +58,20 @@ GitHub:   <a href="https://github.com/halilkirazkaya" target="_blank">github.com
 LinkedIn: <a href="https://www.linkedin.com/in/halilkirazkaya/" target="_blank">linkedin.com/in/halilkirazkaya</a>
 Email:    <a href="mailto:kirazkayahalil@gmail.com">kirazkayahalil@gmail.com</a>
 `,
-    
+
+    blog: `
+${blue(":: BLOG ::")}
+
+  ${yellow("PJPT Exam Review")}
+    <a href="blog/pjpt-exam-review.html">pjpt-exam-review.html</a>
+
+  ${yellow("eWPTXv3 Exam Review")}
+    <a href="blog/ewptxv3-exam-review.html">ewptxv3-exam-review.html</a>
+
+  ${yellow("HTB CJCA Exam Experience")}
+    <a href="blog/cjca-exam-experience.html">cjca-exam-experience.html</a>
+`,
+
     clear: ""
 };
 
@@ -82,14 +96,14 @@ document.addEventListener('click', (e) => {
 });
 
 // Command handling
-commandInput.addEventListener('keydown', function(event) {
+commandInput.addEventListener('keydown', function (event) {
     if (event.key === 'Enter') {
         const input = this.value.trim().toLowerCase();
-        
+
         if (input) {
             // Add command history
             outputDiv.innerHTML += `<div class="command-history"><span style="color:#7ee787">visitor@halilkirazkaya</span><span style="color:#d2a8ff">:~$</span> ${this.value}</div>`;
-            
+
             // Process command
             if (input === 'clear') {
                 outputDiv.innerHTML = "";
@@ -99,7 +113,7 @@ commandInput.addEventListener('keydown', function(event) {
                 printOutput(`Command not found: ${red(input)}. Type ${green("'help'")} for options.`);
             }
         }
-        
+
         this.value = '';
         scrollToBottom();
     }
