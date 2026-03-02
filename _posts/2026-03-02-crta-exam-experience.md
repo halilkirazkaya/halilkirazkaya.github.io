@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "My CRTA Exam Experience: An Unexpected Discount, Lab Environment, and Exam Process"
+title: "My CRTA Exam Experience: An Unexpected Discount, Lab Environment and Exam Process"
 date: 2026-03-02
 tags: [CRTA, CyberWarfare Labs, Active Directory, Red Team, Certification]
 excerpt: "How an unexpected Valentine's Day discount led me to take the CRTA certification, my thoughts on the lab environment, and why the exam felt too CTF-like."
