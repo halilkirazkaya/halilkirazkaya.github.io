@@ -1,0 +1,34 @@
+title: "Halil Kirazkaya"
+description: "Cybersecurity Researcher & Pentester — Blog"
+author:
+  name: "Halil Kirazkaya"
+  email: "kirazkayahalil@gmail.com"
+url: "halilkirazkaya.com"
+baseurl: ""
+
+permalink: /:title/
+
+markdown: kramdown
+highlighter: rouge
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - README.md
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"

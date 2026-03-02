@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<article class="post-full">
+    <header class="post-header fade-in">
+        <div class="post-meta">
+            <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
+            <span class="reading-time">{{ page.content | number_of_words | divided_by: 200 | plus: 1 }} min read</span>
+        </div>
+        <h1 class="post-title">{{ page.title }}</h1>
+        {% if page.tags.size > 0 %}
+        <div class="post-tags">
+            {% for tag in page.tags %}
+            <span class="tag">{{ tag }}</span>
+            {% endfor %}
+        </div>
+        {% endif %}
+    </header>
+
+    <div class="post-content fade-in">
+        {{ content }}
+    </div>
+
+    <footer class="post-footer fade-in">
+        <a href="{{ '/' | relative_url }}" class="back-link">&larr; Back to all posts</a>
+    </footer>
+</article>
