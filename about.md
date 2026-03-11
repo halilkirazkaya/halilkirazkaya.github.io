@@ -30,6 +30,10 @@ permalink: /about/
       <span class="credential-name">CJCA</span>
       <span class="credential-org">HackTheBox</span>
     </li>
+    <li>
+      <span class="credential-name">CRTA</span>
+      <span class="credential-org">CyberWarFare Labs</span>
+    </li>
   </ul>
 </div>
 
